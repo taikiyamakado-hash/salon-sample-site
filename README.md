@@ -77,3 +77,7 @@ APIキー・パスワード・個人情報はありません。.env等はgitigno
 - hero: Japanese adult woman around 30, chestnut medium-long layered hair, three-quarter back profile, cream blouse, sunlit warm plaster wall, editorial photograph, landscape 1536x1024, no text/logos.
 - bob: Japanese adult woman around 30, chin-length glossy dark brown bob, side profile, beige knit, warm plaster background, editorial photograph, portrait 1024x1536, no text/logos.
 - salon: Small Japanese hair salon, two tan chairs, rounded mirrors, oak cabinetry, cream walls, afternoon sunlight, architectural editorial photograph, landscape 1536x1024, no people/text/logos.
+
+## 初回来店向けLP（2026-10-01追加）
+
+`lp.html` を開いてください。LP専用のスタイルは `lp.css`、予約デモは `lp.js` です。既存HPと写真・配色を共有し、髪の悩み→サロンの考え方→カット＋透明感カラー→来店の流れ→FAQ→予約体験へ絞った構成です。通常のサンプル料金12,100円〜を使用し、根拠のない割引・口コミ・限定枠は設けていません。各ボタンから予約デモを開くと、選択したメニューが反映されます。HPフッターからLPへ移動できます。公開時の想定URLは `/salon-sample-site/lp.html` ですが、公開反映は未実施です。

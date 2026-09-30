@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://taikiyamakado-hash.github.io/salon-sample-site/sitemap.xml

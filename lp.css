@@ -173,3 +173,34 @@
 @media (prefers-reduced-motion: reduce) {
   .lp-button { transition: none; }
 }
+
+/* Show complete hair and interior photographs without tall forced crops. */
+.lp-hero { display:grid; grid-template-columns:44% 56%; min-height:0; padding:0; background:#e7e5dc; align-items:center; }
+.lp-hero-image { position:static; grid-column:2; grid-row:1; z-index:auto; width:100%; height:auto; aspect-ratio:3/2; object-fit:contain; }
+.lp-hero-shade { display:none; }
+.lp-hero-content { grid-column:1; grid-row:1; padding:48px 12%; max-width:none; }
+.lp h1 { font-size:clamp(32px,3.2vw,48px); }
+.lp-hero-caption { position:static; grid-column:2; text-align:right; padding:0 22px 18px; color:var(--ink); text-shadow:none; font-size:9px; }
+.lp-story { align-items:center; }
+.lp-story figure { min-height:0; height:auto; width:100%; max-width:460px; margin:40px auto; aspect-ratio:2/3; }
+.lp-story figure img { position:static; width:100%; height:auto; aspect-ratio:2/3; object-fit:contain; }
+.lp-plan-card { align-items:center; }
+.lp-plan-image { min-height:0; height:auto; aspect-ratio:3/2; }
+.lp-plan-image img { position:static; width:100%; height:auto; aspect-ratio:3/2; object-fit:contain; }
+.lp-plan-image > span { font-size:22px; }
+.lp-space { display:grid; grid-template-columns:58% 42%; align-items:center; min-height:0; background:#e6e7de; color:var(--ink); }
+.lp-space > img { position:static; z-index:auto; width:100%; height:auto; aspect-ratio:3/2; object-fit:contain; }
+.lp-space::after { display:none; }
+.lp-space > div { padding:45px 10%; }
+.lp-space h2 { font-size:clamp(24px,2.3vw,36px); }
+@media(max-width:700px) {
+  .lp-hero { display:flex; flex-direction:column; padding-top:0; }
+  .lp-hero-image { height:auto; width:100%; aspect-ratio:3/2; }
+  .lp-hero-content { padding:32px 7%; width:100%; }
+  .lp h1 { font-size:clamp(29px,8.5vw,37px); }
+  .lp-hero-caption { display:none; }
+  .lp-story figure { height:auto; min-height:0; width:78%; max-width:360px; margin:32px auto 0; }
+  .lp-plan-image { height:auto; min-height:0; }
+  .lp-space { grid-template-columns:1fr; min-height:0; }
+  .lp-space > div { padding:38px 7%; }
+}
